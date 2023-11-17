@@ -1,0 +1,162 @@
+/* ...................ROOT VARAIBLES............... */
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ff8a00;
+    --color-white: #fff;
+    --color-info-dark: #7d8fa1;
+    --color-info-light: #dce1ab;
+    --color-dark: #363949;
+    --color-light: #53505010;
+    --color-primary-variant: #0a012c;
+    --color-dark-variant: #22032e;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+body {
+    background-color: var(--color-white)
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0a012c63, #be343499), url(../img/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.hero .parent h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffffffd6
+}
+
+.hero .parent form {
+    background-color: #fff;
+    width: 70%;    
+    border-radius: 99px;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #a754f56c;
+    transition: all 1s ease;
+}
+.hero .parent form:hover{
+    width: 100%;
+}
+
+.hero .parent form input {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 90%;
+    margin-left: 10px
+}
+
+.categories {
+    border-radius: 9px;
+    padding: 10px;
+    background: linear-gradient(145deg, #dbbcbc63, #825977, #dc7fc3, #955c86, #94407d);
+    box-shadow: 20px 20px 60px #290522, -20px -20px 60px #dfc8db;
+    overflow: hidden
+}
+
+.categories h3 {
+    margin: 10px 0
+}
+
+.categories a {
+    text-decoration: none;
+    color: #000
+}
+
+.categories a .bet {
+    text-align: center;
+    border-radius: 9px;
+    margin-bottom: 5px;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #707b4cd8;
+    overflow: hidden;
+    transition: all .5s ease
+}
+
+.categories a .bet:hover {
+    transform: scale(1.1)
+}
+
+.categories a .bet .boo {
+    font-size: 30px;
+    color: #00000064;
+    margin: 10px 0 0 0
+}
+
+.categories a .bet p {
+    font-size: 9px
+}
+
+.categories a .bet p {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-weight: 500
+}
+
+.categories .bot {
+    background-color: #fff;
+    border-radius: 9px;
+    margin: 5px 0;
+    padding: 10px 0 1px 0;
+    text-align: center;
+    overflow: hidden;
+    transition: all .5s ease
+}
+
+.categories a .bot:hover {
+    transform: scale(1.1)
+}
+
+
+@media(min-width:768px) and (max-width:1200px) {
+    .hero{
+        height: 500px;
+    }
+
+    .hero .parent h1 {
+        font-size: 60px;
+        color: #ffffffd6
+    }
+    
+
+}
+
+@media(max-width:767px) {
+    .hero{
+        height: 300px;
+    }
+
+    .hero .parent h1 {
+        font-size: 30px;
+        color: #ffffffd6
+    }
+    
+
+    .hero .parent form input {
+        width: 70%
+    }
+
+
+}

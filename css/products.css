@@ -1,0 +1,231 @@
+body {
+    background-color: #8f6b6b0e
+}
+
+.details {
+    background: linear-gradient(#00000087, #00000062), url(../img/bg-electronics.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center
+}
+
+.details .heir {
+    margin: auto 0;
+    text-align: center
+}
+
+.details .heir h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 120px;
+    filter: drop-shadow(1px 10px 10px #be3434fa);
+}
+
+.details .heir p {
+    font-size: 50px;
+    color: #fff
+}
+
+.upper {
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 9px;
+    margin: 0 0 15px 0;
+    border-radius: 14px;
+    background: linear-gradient(315deg, #e6e1e1, #ffffff);
+    box-shadow: -25px -25px 12px #666464, 25px 25px 12px #fff
+}
+
+.upper h5 {
+    font-weight: 700;
+    padding: 10px 0
+}
+
+.upper .up {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+
+.upper .up .star-rate {
+    border-radius: 9px;
+    border: 1px solid #38363644;
+    transition: all .5s ease
+}
+
+.upper .up .star-rate:hover {
+    background-color: #2020ca2a
+}
+
+.upper .up .star-rate a {
+    text-decoration: none;
+    color: #000
+}
+
+.upper .up .act {
+    background-color: #5151aa49
+}
+
+.upper .up .star-rate h3 {
+    font-size: 15px;
+    padding: 7px 0;
+    text-align: center
+}
+
+.related-product {
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 9px;
+    border-radius: 14px;
+    background: linear-gradient(315deg, #e6e1e1, #ffffff);
+    box-shadow: -25px -25px 12px #666464, 25px 25px 12px #fff
+}
+
+.related-product a {
+    text-decoration: none;
+    color: #000
+}
+
+.related-product .one {
+    border: 1px solid #8080806c;
+    border-radius: 9px;
+    padding: 9px 0 0 6px;
+    background-color: #fff;
+    margin-top: 10px;
+    transition: all .5s ease
+}
+
+.related-product .one:hover {
+    border: 1px solid #080cee9e;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #2020ca17
+}
+
+.right .uno {
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db
+}
+
+.right .uno .one {
+    display: flex
+}
+
+.right .uno .one p {
+    padding: 17px 0 0 0
+}
+
+.right .uno .one .for {
+    width: 70%;
+    background-color: transparent;
+    outline: none;
+    border: none
+}
+
+.right .act {
+    z-index: -1
+}
+
+.right .product {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffffdc;
+    border-radius: 20px;
+    background: snow;
+    box-shadow: inset -25px -25px 30px #666464, inset 25px 25px 30px #fff;
+    transition: all .5s ease
+}
+
+.right .product:hover {
+    border: 1px solid #080bee;
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    background-color: #fbf8fbeb
+}
+
+.right .product a {
+    text-decoration: none;
+    color: #000
+}
+
+.right .product a h2 {
+    font-size: 20px;
+    margin-top: 10px
+}
+
+.right .product a h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 99px;
+    text-align: center;
+    background-color: #0000002d
+}
+
+
+@media(min-width:768px) and (max-width:1200px) {
+    .details {
+        height: 60vh;
+    }
+    
+    .details .heir h1 {
+        font-size: 80px;
+    }
+    
+    .details .heir p {
+        font-size: 40px;
+    }
+    
+    
+
+    .right .product .last {
+        order: 1;
+        word-spacing: 10px
+    }
+
+}
+
+@media(max-width:767px) {
+
+    
+.details {
+    height: 60vh;
+}
+
+.details .heir h1 {
+    font-size: 50px;
+}
+
+.details .heir p {
+    font-size: 20px;
+}
+
+    .right .uno .one {
+        justify-content: space-between
+    }
+
+    .right .uno .pro p {
+        word-spacing: 10px;
+        margin-left: 20px
+    }
+
+    .right .product .last {
+        order: 1;
+        word-spacing: 10px
+    }
+
+    .related-product {
+        order: 1
+    }
+
+    .up {
+        order: 2
+    }
+
+}

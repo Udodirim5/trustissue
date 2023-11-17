@@ -1,0 +1,711 @@
+/* ...................ROOT VARAIBLES............... */
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ff8a00;
+    --color-white: #fff;
+    --color-info-dark: #7d8fa1;
+    --color-info-light: #dce1ab;
+    --color-dark: #363949;
+    --color-light: #53505010;
+    --color-primary-variant: #0a012c;
+    --color-dark-variant: #22032e;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    overflow: auto;
+}
+
+.hero {
+    margin-top: 55px;
+    height: 100vh;
+    /* background: linear-gradient(#1b01126c, #5a083488), url(../img/bg1.jpg); */
+    background: linear-gradient(to right, var(--color-dark-variant), #be3434fa);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.hero .text {
+    text-align: center;
+    width: 67%;
+}
+
+.hero .text h1 {
+    color: #ffffffb0;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero .text h1 .trust {
+    color: #b8f092;
+    filter: drop-shadow(10px 10px 4px #5d1cc6);
+}
+
+.hero .text form {
+    background-color: #fff;
+    width: 40%;
+    border-radius: 99px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #a754f56c;
+    transition: all .9s ease;
+}
+
+.hero .text form:hover {
+    width: 70%;
+}
+
+.hero .text form input {
+    outline: none;
+    border: none;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.category {
+    border-radius: 9px;
+    margin-bottom: 100px;
+    padding: 50px 20px;
+    background: var(--color-white);
+    box-shadow: 20px 20px 25px #bfbdbd,
+        -20px -20px 25px #504b4b;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.categories a {
+    text-decoration: none;
+}
+
+.categories .box {
+    border-radius: 9px;
+    height: 70px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #aeadad63, #70656d);
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db;
+    transition: all .5s ease;
+}
+
+.categories .box:hover {
+    transform: scaleY(1.1);
+    box-shadow: 2px 2px 2px 2px #8080803b;
+}
+
+.categories .boo {
+    color: #000;
+    filter: drop-shadow(10px 10px 1px grey)
+}
+
+.categories .box h5 {
+    color: #000;
+    margin: 5px 0 0 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.later{
+    border-radius: 9px;
+    margin-bottom: 100px;
+    padding: 50px 20px;
+    background: var(--color-white);
+    box-shadow: 20px 20px 25px #bfbdbd,
+        -20px -20px 25px #504b4b;
+
+}
+
+.lat {
+    height: auto;
+}
+
+.lat .man {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.lat .man .mat {
+    border-radius: 9px;
+    padding: 10px;
+    background: linear-gradient(145deg, #aeadad63, #70656d);
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db;
+    transition: all .5s ease;
+}
+
+.lat .man .mat:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.lat .man .mat .toop {
+    display: flex;
+    justify-content: start;
+}
+
+.lat .man .mat .toop img {
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.lat .man .mat .toop .star {
+    color: #fadb14;
+    margin: 20px 0;
+}
+
+.next {
+    /* background-color: #022a1c; */
+    background-color: var(--color-warning);
+    margin-top: 100px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.next .mid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.next .mid .one {
+    color: #fff;
+    padding: 10px 60px;
+    width: 50%;
+    position: absolute;
+    left: 15px;
+    top: 2290px;
+}
+
+.next .mid .one h2,
+.next .mid .two h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.next .mid .one a,
+.next .mid .two a {
+    text-decoration: none;
+}
+
+.next .mid .one a h3,
+.next .mid .two a h3 {
+    border-radius: 99px;
+    border: 2px solid #fff;
+    width: 40%;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.next .mid .one a h3:hover,
+.next .mid .two a h3:hover {
+    border: 2px solid #000;
+    box-shadow: -5px 0 5px 5px grey;
+    background-color: #000;
+    transform: scale(.8);
+}
+
+.next .mid .two {
+    color: #fff;
+    padding: 50px 60px;
+    width: 50%;
+    position: absolute;
+    right: 28px;
+    background-color: #11121375;
+    top: 2215px;
+    border-radius: 39px;
+}
+
+.download-app-parent {
+    margin-top: 135px;
+    margin-bottom: 10px;
+    padding: 10px 10px 20px 10px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, var(--color-warning), #f0f0f0);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #1d0808;
+}
+
+.download-app {
+    padding: 90px 10px 20px 10px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, var(--color-warning), var(--color-primary));
+    box-shadow: inset 20px 20px 60px #654d4d, inset -20px -20px 60px #896868;
+    overflow: hidden;
+}
+
+.app {
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.app img {
+    height: 400px;
+    filter: drop-shadow(0 0 .75rem rgb(70, 61, 63));
+}
+
+.app h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.app p {
+    margin: 20px 0 40px 0;
+}
+
+.download {
+    background: linear-gradient(145deg, var(--color-dark-variant), var(--color-warning));
+    color: var(--color-white);
+    border-radius: 40px;
+    box-shadow: #00000065 0 0 5px 0;
+}
+
+.download img {
+    width: 100px;
+    height: 100px;
+}
+
+.daas .das {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #1d0808;
+    padding: 35px;
+    overflow: hidden;
+}
+
+.daas .das .what {
+    gap: 20px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 600px;
+    text-align: center;
+    border-radius: 14px;
+    background: snow;
+    box-shadow: inset -25px -25px 41px #5a1f1f, inset 25px 25px 41px #fff;
+    border: 5px solid #bab5b5;
+    transition: all .5s ease;
+}
+
+.daas .das .what:hover {
+    transform: scale(1.04);
+}
+
+.daas .das .what img {
+    height: 150px;
+}
+
+.topple {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 9px;
+    background: snow;
+    box-shadow: 20px 20px 38px #d9d5d5, -20px -20px 38px #210909;
+    overflow: hidden;
+}
+
+.topple .box {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media(min-width:768px) and (max-width:1199px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero .text {
+        text-align: center;
+        width: 80%;
+    }
+
+    .hero .text h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .hero .text form {
+        width: 70%;
+    }
+
+    .hero .text form:hover {
+        width: 100%;
+    }
+
+    .categories {
+        overflow-x: auto;
+    }
+
+    .lat {
+        height: auto;
+        overflow: auto;
+    }
+
+    .lat .man {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-top: 10px;
+        width: 1600px;
+    }
+
+    .lat .man .mat {
+        background-color: #fff;
+        border-radius: 9px;
+        padding: 10px;
+    }
+
+    .lat .man .mat .toop {
+        display: flex;
+        justify-content: start;
+    }
+
+    .lat .man .mat .toop img {
+        border-radius: 50%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+    }
+
+    .lat .man .mat .toop .star {
+        color: #fadb14;
+        margin: 20px 0;
+    }
+
+    .next {
+        height: 400px;
+        color: #fff;
+    }
+
+    .next .mid {
+        display: inline-block;
+    }
+
+    .next .mid .one {
+        padding: 40px 0 0 20px;
+        width: 45%;
+        position: relative;
+        left: 15px;
+        top: 0;
+    }
+
+    .next .mid .two {
+        color: #fff;
+        padding: 30px 0 0 20px;
+        width: 50%;
+        position: absolute;
+        background-color: #0000005d;
+        right: 28px;
+        top: 1935px;
+        border-radius: 9px;
+    }
+
+    .next .mid .one h2,
+    .next .mid .two h2 {
+        font-size: 30px;
+    }
+
+    .next .mid .one a h3 {
+        border-radius: 99px;
+        border: 2px solid #fff;
+        width: 50%;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        transition: all .5s ease;
+    }
+
+    .next .mid .two a h3 {
+        border-radius: 99px;
+        border: 2px solid #fff;
+        width: 40%;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        transition: all .5s ease;
+    }
+
+    .next .mid .one a h3:hover {
+        background-color: #00000082;
+    }
+
+    .next .mid .two a h3:hover {
+        background-color: #022a1c;
+    }
+
+    .app img {
+        height: 400px;
+        padding: 20px 0 50px 0;
+    }
+
+    .download {
+        margin-bottom: 20px;
+    }
+
+    .download .text {
+        order: 1;
+    }
+
+    .download .text h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .download .text p {
+        text-align: center;
+    }
+
+    .daas .das {
+        display: block;
+    }
+
+    .daas .das .what {
+        gap: 20px;
+        padding: 20px;
+        margin: 10px;
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .daas .das .what img {
+        height: 150px;
+    }
+
+    .topple {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+@media(min-width:67px) and (max-width:768px) {
+    .hero {
+        height: 300px
+    }
+
+    .hero .text {
+        text-align: center;
+        width: 100%;
+        padding: 0 10px
+    }
+
+    .hero .text h1 {
+        color: #fff;
+        font-size: 29px
+    }
+
+    .hero .text form {
+        text-align: left;
+        width: 70%
+    }
+
+    .hero .text form:hover {
+        width: 90%
+    }
+
+    .hero .text form input {
+        width: 60%;
+    }
+
+
+    .categories {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        overflow-x: auto
+    }
+
+    .categories .box {
+        height: 70px;
+        width: 100vw;
+        scroll-snap-type: proximity;
+    }
+
+    .lat {
+        height: 600px;
+        overflow-y: auto;
+    }
+
+    .lat .man {
+        display: block;
+    }
+
+
+    .next {
+        height: 500px;
+        padding-top: 39px;
+    }
+
+    .next .mid {
+        display: inline-block;
+        justify-content: center
+    }
+
+    .next .mid .one {
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        left: 2px;
+        top: 0
+    }
+
+    .next .mid .two {
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        background-color: #0000005b;
+        border-radius: 9px;
+        left: 2px;
+        top: 0
+    }
+
+    .next .mid .one h2,
+    .next .mid .two h2 {
+        font-size: 20px;
+        font-weight: 700
+    }
+
+    .next .mid .one a,
+    .next .mid .two a {
+        text-decoration: none
+    }
+
+    .next .mid .one a h3,
+    .next .mid .two a h3 {
+        border-radius: 99px;
+        border: 2px solid #fff;
+        width: 40%;
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 16px
+    }
+
+    .next .mid .one a h3:hover {
+        border: 2px solid #fff;
+        background-color: #022a1c
+    }
+
+    .next .mid .two a h3:hover {
+        border: 2px solid #fff;
+        background-color: #022a1c
+    }
+
+
+
+    .download-app-parent {
+        margin-top: 60px;
+    }
+
+    .download-app {
+        background-color: #a6646444;
+        display: block;
+        padding-top: 40px;
+    }
+
+    .app {
+        margin-bottom: 180px;
+        overflow: hidden
+    }
+
+    .app h1 {
+        font-size: 18px
+    }
+
+    .app img {
+        margin: 0;
+        height: 300px;
+        padding: 20px 0 50px 0;
+    }
+
+    .download {
+        background: linear-gradient(180deg, #ffffff49, #383232);
+        background-color: transparent;
+        box-shadow: 0 10px 10px #0000009f;
+        position: absolute;
+        top: 2960px;
+        left: 0
+    }
+
+    .download .text {
+        order: 1
+    }
+
+    .download .text h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center
+    }
+
+    .download .text p {
+        text-align: center
+    }
+
+    .daas .das {
+        display: block
+    }
+
+    .daas .das .what {
+        margin: 10px 0;
+        width: 100%
+    }
+
+    .daas .das .what img {
+        height: 150px
+    }
+
+    .topple {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}

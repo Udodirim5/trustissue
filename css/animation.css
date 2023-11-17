@@ -1,0 +1,228 @@
+#mybtn {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 99;
+    border: none;
+    border-radius: 50px;
+    background-color: #460808;
+    cursor: pointer;
+    padding: 15px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    transition: all 2s ease
+}
+
+.fa-arrow-up {
+    color: #fff
+}
+
+.rightanim {
+    visibility: hidden
+}
+
+.right {
+    animation-name: right;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%)
+    }
+}
+
+@-webkit-keyframes right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%)
+    }
+}
+
+.leftanim {
+    visibility: hidden
+}
+
+.left {
+    animation-name: left;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%)
+    }
+}
+
+@-webkit-keyframes left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%)
+    }
+}
+
+.zoomanim {
+    visibility: hidden
+}
+
+.zoom {
+    animation-name: zoom;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.slideanim {
+    visibility: hidden
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translatey(0%)
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translatey(0%)
+    }
+}
+
+.pulser {
+    animation: pulse 3s infinite ease-in-out
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(0, 0) scale(1)
+    }
+
+    50% {
+        transform: translate(0, -1%) scale(1);
+        box-shadow: 10px 10px 15px 10px #cbced1, -5px -5px 10px -5px #fff
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1)
+    }
+}
+
+.upanim {
+    visibility: hidden
+}
+
+.up {
+    animation-name: up;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%)
+    }
+}
+
+@-webkit-keyframes up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%)
+    }
+}
+
+.downanim {
+    visibility: hidden
+}
+
+.down {
+    animation-name: down;
+    animation-duration: 3s;
+    visibility: visible
+}
+
+@keyframes down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%)
+    }
+}
+
+@-webkit-keyframes down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%)
+    }
+}

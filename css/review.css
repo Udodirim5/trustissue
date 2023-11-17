@@ -1,0 +1,235 @@
+body {
+    background-color: rgba(128, 128, 128, .274)
+}
+
+.hero {
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db;
+    z-index: 1
+}
+
+.hero img {
+    margin-top: 15px
+}
+
+.hero .web {
+    padding: 10px 35px 0 35px;
+    border-radius: 9px;
+    border: 1px solid #7676ee;
+    text-align: center;
+    margin-top: 15px
+}
+
+.hero .web:hover {
+    background-color: #9b9be923
+}
+
+.review {
+    background-color: #fff
+}
+
+.review img {
+    height: 40px;
+    border-radius: 50%
+}
+
+.review input {
+    padding: 8px 0 0 0;
+    border: none;
+    outline: none;
+    width: 90%
+}
+
+.review .fa-paper-plane {
+    cursor: pointer
+}
+
+.rating {
+    display: inline-block
+}
+
+.rating input {
+    display: none
+}
+
+.rating label {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    color: #ccc
+}
+
+.rating label:before {
+    content: '\2605'
+}
+
+.rating input:checked~label {
+    color: #fc0
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: #fc0
+}
+
+.review5 {
+    background-color: #fff
+}
+
+.review5>h3 {
+    font-weight: 700;
+    padding: 0 15px
+}
+
+.review5>p {
+    padding: 0 15px
+}
+
+.review5 .log {
+    display: flex
+}
+
+.review5 input {
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px 0 8px
+}
+
+.review5 .box {
+    background-color: #ccc;
+    height: 9px;
+    width: 80%;
+    border-radius: 99px;
+    margin: 9px 8px 0 8px
+}
+
+.review5 .box .box5 {
+    background-color: green;
+    height: 9px;
+    border-radius: 99px;
+    width: 99%
+}
+
+.review5 .box .box4 {
+    background-color: #86e20d;
+    height: 9px;
+    border-radius: 99px;
+    width: 50%
+}
+
+.review5 .box .box3 {
+    background-color: #dff70a;
+    height: 9px;
+    border-radius: 99px;
+    width: 30%
+}
+
+.review5 .box .box2 {
+    background-color: #fc9b09;
+    height: 9px;
+    border-radius: 99px;
+    width: 10%
+}
+
+.review5 .box .box1 {
+    background-color: #ff1e00;
+    height: 9px;
+    border-radius: 99px;
+    width: 5%
+}
+
+.comments {
+    background-color: #fff;
+    padding: 10px 15px
+}
+
+.comments .name1 img {
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px 0
+}
+
+.comments .name1 h1 {
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.comments .name1 h3 {
+    font-size: 15px;
+    font-weight: 200;
+    word-spacing: 5px
+}
+
+.comments .inta {
+    display: flex
+}
+
+.comments .inta p {
+    margin: 0 10px
+}
+
+.dress {
+    border-radius: 9px;
+    overflow-y: auto;
+    height: 570px
+}
+
+.dress .bed {
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 10px
+}
+
+.dress .bat .btp {
+    border-radius: 9px;
+    border: 1px solid #6262fb;
+    background-color: #7777f123;
+    padding: 10px 10px 0 10px
+}
+
+.dress .bat a {
+    text-decoration: none
+}
+
+.dress .bat a .bmp {
+    border-radius: 99px;
+    border: 1px solid #6262fb;
+    background-color: #2727e8d4;
+    padding: 10px;
+    transition: all .5s ease
+}
+
+.dress .bat a .bmp:hover {
+    background-color: #7777f123;
+    color: #000
+}
+
+.dress .bat a .bmp {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700
+}
+
+
+@media(min-width:768px) and (max-width:1200px) {
+    .review5 .box {
+        width: 60%
+    }
+
+    .comments .veri .yee {
+        order: 1
+    }
+
+}
+
+@media(max-width:767px) {
+    .review5 .box {
+        width: 60%
+    }
+
+    .comments .veri .yee {
+        order: 1
+    }
+
+}

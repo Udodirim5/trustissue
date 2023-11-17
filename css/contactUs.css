@@ -1,0 +1,223 @@
+
+/* ...................ROOT VARAIBLES............... */
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ff8a00;
+    --color-white: #fff;
+    --color-info-dark: #7d8fa1;
+    --color-info-light: #dce1ab;
+    --color-dark: #363949;
+    --color-light: #53505010;
+    --color-primary-variant: #0a012c;
+    --color-dark-variant: #22032e;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+    background-color: var(--color-white)
+}
+
+.first {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: var(--color-white);
+    background: linear-gradient(to right, var(--color-dark-variant), #be3434fa);
+}
+.first h1 {
+    font-size: 200px;
+    font-family: oregon;
+}
+.first p{
+    font-size: 40px;
+    font-family: oregon;
+}
+
+
+.hero .herot {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px
+}
+
+.hero .h4 {
+    padding: 10px 0 10px 10px;
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db
+}
+
+.hero .herot {
+    margin-top: 20px
+}
+
+.hero .herot .lad {
+    border: 2px solid #8080801f;
+    padding: 40px;
+    border-radius: 9px;
+    color: var(--color-white);
+    background: linear-gradient(to right, var(--color-dark-variant), #3440be47);
+    box-shadow: inset -25px -25px 43px #3e3535, inset 25px 25px 43px #f6d3d3
+}
+
+.hero .herot .lad h4 {
+    margin: 30px 0
+}
+
+.hero .herot .lad p {
+    margin: 30px 0
+}
+
+.hero .herot .lad p a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 99px;
+    transition: all .5s ease
+}
+
+.hero .herot .lad p a:hover {
+    background-color: #8585e073;
+    color: #000
+}
+
+.form-top h1 {
+    font-family: fantasy
+}
+
+.form-top {
+    border-radius: 60px;
+    background: linear-gradient(to right, var(--color-dark-variant), #3440be47);
+    box-shadow: inset -25px -25px 43px #3e3535, inset 25px 25px 43px #f6d3d3;
+    color: var(--color-white);
+    overflow: hidden
+}
+
+.form-top .left .img-fluid {
+    height: 200px
+}
+
+.form-top form textarea,
+.form-top form input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 9px;
+    margin: 5px 0;
+    background-color: var(--color-primary-variant)
+}
+
+.form-top form textarea:placeholder-shown,
+.form-top form input:placeholder-shown {
+    color: #fff;
+    background-color: #34491821;
+    border: 1px solid #eee5e6
+}
+
+.form-top form .btn {
+    width: 100%;
+    /* color: var(--color-white);
+    background-color: var(--color-primary-variant); */
+}
+
+.form-top .left {
+    background: linear-gradient(180deg, #18030300, #895fa711), url(../img/contact-us.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.form-top .right .boo {
+    margin: 20px 0 0 10px;
+    font-size: 25px
+}
+
+.form-top .right .bee {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    padding: 0 20px
+}
+
+.form-top .right a {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 0 20px
+}
+
+.form-top .right .fada-icons {
+    display: flex;
+    justify-content: space-between
+}
+
+.form-top .right .fada-icons a {
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    padding: 0
+}
+
+.form-top .right .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    color: #fff;
+    background-color: #0000004c;
+    transition: all 1s ease
+}
+
+.form-top .right .icons:hover {
+    background-color: aliceblue;
+    color: #000;
+    transform-origin: right;
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+
+.first h1 {
+    font-size: 100px;
+}
+.first p{
+    font-size: 30px;
+}
+
+
+}
+
+@media(max-width:767px) {
+    .first h1 {
+        font-size: 60px;
+    }
+    .first p{
+        font-size: 20px;
+    }
+    
+    .form-top{
+        width: 90%;
+    }
+    .form-top .left {
+        display: none
+    }
+
+    .hero .herot {
+        display: block;
+        gap: 10px
+    }
+
+}

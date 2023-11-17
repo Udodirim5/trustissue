@@ -1,0 +1,170 @@
+.hero {
+    margin-top: 55px;
+    height: 400px;
+    background: linear-gradient(#1b01126c, #5a083488), url(../img/about_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center
+}
+
+.hero h1 {
+    width: 70%;
+    color: #ffffffe3;
+    padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px
+}
+
+.bot .two {
+    border-radius: 9px;
+    background-color: #80808010;
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #dfc8db
+}
+
+.bot .two .pay h4 {
+    color: #0e0d0da4;
+    font-size: 15px
+}
+
+.bot .two .pay h3 {
+    color: #000;
+    font-size: 20px
+}
+
+.bot .two .para {
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #1b49493a
+}
+
+.bot .two .para p {
+    color: #000;
+    font-size: 16px;
+    padding: 30px
+}
+
+.boy {
+    border-radius: 9px;
+    background-color: #1b49493a;
+    display: flex;
+    justify-content: space-between
+}
+
+.boy .one{
+    width: 60%;
+}
+.boy .one h3 {
+    font-size: 20px;
+    padding: 10px
+}
+
+.boy .two a {
+    text-decoration: none
+}
+
+.boy .two a h1 {
+    color: #fff;
+    font-size: 19px;
+    border-radius: 99px;
+    background-color: #000;
+    padding: 10px;
+    margin-top: 5px
+}
+
+.miu .mib h4 {
+    font-size: 25px
+}
+
+.miu .mib h5 {
+    font-size: 18px;
+    margin-top: 70px
+}
+
+.miu .mib p {
+    font-size: 14px
+}
+
+.people {
+    height: 500px;
+    padding: 20px 10px;
+    display: grid;
+    border-radius: 9px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    box-shadow: 20px 20px 60px #a594a2, -20px -20px 60px #141214;
+    margin-bottom: 75px
+}
+
+.people .list {
+    background-color: #f6f0f6;
+    border: 5px solid #f3e2e2;
+    margin-bottom: 20px;
+}
+
+.people .list h3 {
+    font-weight: 700;
+    font-size: 35px
+}
+
+.people .list .boo {
+    font-size: 15px
+}
+
+.people .list p {
+    font-size: 12px;
+    color: #808080cb
+}
+
+
+@media(min-width:768px) and (max-width:1200px) {
+    .people {
+        height: 910px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px
+    }
+
+    .footer .footer1 {
+        display: block
+    }
+
+    .footer .footer1 .list form {
+        width: 80vw
+    }
+}
+
+@media(max-width:767px) {
+    .hero {
+        height: 200px
+    }
+
+    .hero h1 {
+        width: 80%;
+        padding: 40px 0;
+        font-size: 25px;
+        color: #fff
+    }
+    .boy .one{
+        width: 60%;
+    }
+    
+    .boy .two a h1 {
+        margin-top: 25px
+    }
+    
+
+    .people {
+        height: 1500px;
+        display: block
+    }
+
+}

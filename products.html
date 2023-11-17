@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Boot5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <title>Products</title>
+</head>
+
+<body>
+
+
+    <div id="two">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+
+        <a class="logo" href="./index.html">TRUST<span class="dot">ISSUE</span></a>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li><a href="./logIN.html">Sign in</a></li>
+        </ul>
+    </nav>
+    <div class="nill" id="heading1">
+        <a href="#back" onclick = "history.back()">
+            <span class="fa fa-angle-left boo"></span>
+        </a>
+        <!-- <button>
+            <a href="#heading1">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </button> -->
+    </div>
+
+    <div class="details">
+        <div class="heir zoom">
+            <h1>Best Eletronics</h1>
+            <p>Compare the best companies in this category Rating</p>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 ">
+                <div class="upper left">
+                    <h5>Rating</h5>
+                    <div class="up">
+                        <div class="star-rate act">
+                            <a href="#">
+                                <h3>Any</h3>
+                            </a>
+                        </div>
+                        <div class="star-rate">
+                            <a href="#">
+                                <h3><span class="fa fa-star"></span> 3.0+</h3>
+                            </a>
+                        </div>
+                        <div class="star-rate">
+                            <a href="#">
+                                <h3><span class="fa fa-star"></span> 4.0+</h3>
+                            </a>
+                        </div>
+                        <div class="star-rate">
+                            <a href="#">
+                                <h3><span class="fa fa-star"></span> 4.5+</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>Location</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <select class="form-select" id="country" name="country">
+                                <option>select country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h5>Company status</h5>
+                    <hr>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>Verified</p>
+                        </div>
+                        <div class="col-2">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>Claimed</p>
+                        </div>
+                        <div class="col-2">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-product leftanim">
+                    <div class="row">
+                        <div class="col-8 col-lg-8 col-md-8 p-3">
+                            <h5>Related category</h5>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-4 text-center p-3">
+                            <a href="./categories.html">Show all</a>
+                        </div>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="one">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-8 col-lg-8 col-md-8 ">
+                                    <p>Phones & Tablets</p>
+                                </div>
+                                <div class=" col-4 col-lg-4 col-md-4 text-center">
+                                    <p>196</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ======================== RIGHT SIDE =========================== -->
+            <div class="col-lg-8 right">
+                <div class="row uno">
+                    <div class="col-md-6 col-lg-8 pro one">
+                        <p>1-20 of 2,693 results</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 one">
+                        <p>Sort by: </p>
+                        <select class="form-select for" aria-label="Default select example">
+                            <option selected>Most relivant</option>
+                            <option value="1">Highest number of reviews</option>
+                            <option value="2">Most recent reviews</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- ============================= Accordion =====================================-->
+                <div class="accordion act pt-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong class="px-1">What does sorting by relevance mean? </strong> Read more
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sorting by relevance shows all companies that are best in a category, ordered by
+                                TrustScore and review count. To be eligible, they must actively ask for reviews and have
+                                received 25+ in the last 12 months.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- ================ PRODUCTS ==============================-->
+                <div class="product">
+                    <a href="./review.html">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2">
+                                <img src="./img/tv.png" class="img-fluid text-center" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <h2>Hisense 32 Inch A4H Series HD Smart TV</h2>
+                                <div class="rate">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-alt"></span>
+                                    TrustScore 5.0 | 3,029 reviews
+                                </div>
+                                <p><strong>Orlando, United States</strong></p>
+                            </div>
+                            <div class="col-md-4 col-lg-2">
+                                <h3>MOST RECENT</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-2 last">
+                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-envelope"></span>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="col-md-9 col-lg-6">
+                                <p>Eletronics, Solar panel, Invaterss, Battery pack</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <p>Latest reviews <span class="fa fa-angle-right"></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- ================ PRODUCTS 2 ==============================-->
+                <div class="product rightanim">
+                    <a href="./review.html">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2">
+                                <img src="./img/shoe.png" class="img-fluid text-center" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <h2>ADIDAS Duramo 10 Shoes Men</h2>
+                                <div class="rate">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-alt"></span>
+                                    TrustScore 5.0 | 3,029 reviews
+                                </div>
+                                <p><strong>Orlando, United States</strong></p>
+                            </div>
+                            <div class="col-md-4 col-lg-2">
+                                <h3>MOST RECENT</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-2 last">
+                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-envelope"></span>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="col-md-9 col-lg-6">
+                                <p>Eletronics, Solar panel, Invaterss, Battery pack</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <p>Latest reviews <span class="fa fa-angle-right"></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- ================ PRODUCTS 3 ==============================-->
+                <div class="product rightanim">
+                    <a href="./review.html">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2">
+                                <img src="./img/monitor.png" class="img-fluid text-center" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <h2>Lenovo V50a AIO (24") - 4GB/1TB SSD - Corei3 - FreeDOS</h2>
+                                <div class="rate">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-alt"></span>
+                                    TrustScore 5.0 | 3,029 reviews
+                                </div>
+                                <p><strong>Orlando, United States</strong></p>
+                            </div>
+                            <div class="col-md-4 col-lg-2">
+                                <h3>MOST RECENT</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-2 last">
+                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-envelope"></span>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="col-md-9 col-lg-6">
+                                <p>Eletronics, Solar panel, Invaterss, Battery pack</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <p>Latest reviews <span class="fa fa-angle-right"></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- ================ PRODUCTS 4 ==============================-->
+                <div class="product rightanim">
+                    <a href="./review.html">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2">
+                                <img src="./img/laptop.png" class="img-fluid text-center" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <h2>Lenovo Ideapad 3 Intel Core I3 15" 4GB RAM/ 1TB - FreeDOS</h2>
+                                <div class="rate">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-alt"></span>
+                                    TrustScore 5.0 | 3,029 reviews
+                                </div>
+                                <p><strong>Orlando, United States</strong></p>
+                            </div>
+                            <div class="col-md-4 col-lg-2">
+                                <h3>MOST RECENT</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-2 last">
+                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-envelope"></span>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="col-md-9 col-lg-6">
+                                <p>Eletronics, Solar panel, Invaterss, Battery pack</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <p>Latest reviews <span class="fa fa-angle-right"></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- ================ PRODUCTS 5 ==============================-->
+                <div class="product rightanim">
+                    <a href="./review.html">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2">
+                                <img src="./img/1.png" class="img-fluid text-center" alt="">
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <h2>Bluetti battery pack</h2>
+                                <div class="rate">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-alt"></span>
+                                    TrustScore 5.0 | 3,029 reviews
+                                </div>
+                                <p><strong>Orlando, United States</strong></p>
+                            </div>
+                            <div class="col-md-4 col-lg-2">
+                                <h3>MOST RECENT</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-2 last">
+                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-envelope"></span>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="col-md-9 col-lg-6">
+                                <p>Eletronics, Solar panel, Invaterss, Battery pack</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <p>Latest reviews <span class="fa fa-angle-right"></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <nav1 aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">356</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================== FOOTER ===================== -->
+    <div class="footer">
+        <div class="container footer1 py-5">
+            <div class="list">
+                <h4>About</h4>
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./aboutUs.html">About us</a></p>
+                <p><a href="./contactUs.html">Contact us</a></p>
+                <p><a href="#">Blogs</a></p>
+                <p><a href="#">How TrustIssue works</a></p>
+            </div>
+            <div class="list">
+                <h4>Community</h4>
+                <p><a href="#">Trust in review</a></p>
+                <p><a href="./help-center.html">Help center</a></p>
+                <p><a href="./logIN.html">Sign-in</a></p>
+                <p><a href="./logIN.html">Sign-up</a></p>
+                <p><a href="#">Chrome app</a></p>
+            </div>
+            <div class="list">
+                <h4>Businesses</h4>
+                <p><a href="#">TrustIssue Business</a></p>
+                <p><a href="./products.html">Products</a></p>
+                <p><a href="#">Plan & Pricing</a></p>
+                <p><a href="#">Business Sign-up</a></p>
+                <p><a href="#">Blog for Business</a></p>
+            </div>
+            <div class="list">
+                <h4>Follow Us On</h4>
+                <p><a href="#"><span class=" fab fa-facebook"></span></a></p>
+                <p><a href="#"><span class=" fab fa-twitter"></span></a></p>
+                <p><a href="#"><span class=" fab fa-instagram"></span></a></p>
+                <p><a href="#"><span class=" fab fa-linkedin"></span></a></p>
+                <p><a href="#"><span class=" fab fa-youtube"></span></a></p>
+            </div>
+            <div class="list text-center">
+                <h4>Receive Newsletter</h4>
+                <form action="">
+                    <input type="email" placeholder="Enter your email address..."><br>
+                    <button id='submit' name='subscribe'>Subscribe Now!</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="container text-center py-3 ">
+            <p>© 2023 TrustIssue, Inc. All rights reserved.</p>
+        </div>
+    </div>
+    </div>
+
+
+    <button id="mybtn"><i class="fa fa-arrow-up"></i></button>
+    <script src="./Boot5/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./Boot5/js/all.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>
